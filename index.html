@@ -8,30 +8,37 @@
     <title>Document</title>
   </head>
   <body>
-    <form id="login-form">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        value=""
-        placeholder="What is your name?"
-      />
-      <button>Login</button>
-    </form>
-    <h2 id="clock"></h2>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
-    </div>
-    <div id="weather">
-      <span></span>
-      <span></span>
-    </div>
+    <main>
+      <div id="weather">
+        <span id="weather-type"></span>, <span id="temp"></span>&#8457; -
+        <span id="city"></span>
+      </div>
+
+      <form type="submit" id="login-form">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          value=""
+          placeholder="What is your name?"
+        />
+      </form>
+      <h2 id="clock"></h2>
+      <h1 id="greeting" class="hidden"></h1>
+      <form id="todo-form">
+        <input
+          type="text"
+          placeholder="Write a To Do and Press Enter"
+          required
+        />
+      </form>
+      <ul id="todo-list"></ul>
+      <div id="quote">
+        <span id="quote-text"></span> -
+        <span id="quote-author"></span>
+      </div>
+    </main>
+
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>

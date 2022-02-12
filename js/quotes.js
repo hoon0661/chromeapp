@@ -29,7 +29,7 @@ const quotes = [
     author: "Mae West",
   },
   {
-    quote: "Never go on trips with anyone you do ntot love.",
+    quote: "Never go on trips with anyone you do not love.",
     author: "Hemmingway",
   },
   {
@@ -42,8 +42,8 @@ const quotes = [
   },
 ];
 
-const quote = document.querySelector("#quote span:first-child");
-const author = document.querySelector("#quote span:last-child");
+const quote = document.querySelector("#quote-text");
+const author = document.querySelector("#quote-author");
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 quote.innerText = todaysQuote.quote;
