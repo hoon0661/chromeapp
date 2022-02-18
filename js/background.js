@@ -13,10 +13,5 @@ const images = [
 ];
 
 const randomImage = images[Math.floor(Math.random() * images.length)];
-
-const bgImage = document.createElement("img");
-bgImage.src = `url(img/${randomImage})`;
-bgImage.alt = "background image";
-// document.body.appendChild(bgImage);
 const body = document.body;
-body.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("/img/${randomImage}")`;
+body.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("img/${randomImage}")`;
